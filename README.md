@@ -1,6 +1,6 @@
 # Explainable_AI 
 ***
-##Overview
+## Overview
 
 This project investigates how different explainable AI (XAI) methods explain predictions of a BERT-based toxicity classifier. The goal is to compare explanation methods and evaluate whether they highlight similar important words in text.
 
@@ -23,12 +23,9 @@ The main research question is:
 In a BERT-based toxicity classifier, how do attention, Integrated Gradients, and LIME differ in token importance, and how much do their explanations agree with each other?
 
 Additionally, the project evaluates:
-
-Agreement between explanation methods
-
-Alignment with human intuition
-
-Behavior on identity-related text
+  - Agreement between explanation methods
+  - Alignment with human intuition
+  - Behavior on identity-related text
 
 ***
 
@@ -65,7 +62,7 @@ To create the environment, use the steps below:
 7. It should now list version 3.12.x
 
 ### 3. Download requirements
-run "pip install pandas numpy matplotlib torch transformers captum lime"
+run "pip install pandas numpy matplotlib torch transformers captum lime" to install all neccessary libraries
 
 ***
 
