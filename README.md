@@ -31,14 +31,13 @@ Additionally, the project evaluates:
 
 ## Repository Structure:
 <pre> 
-```
+Explainable_AI/
 │ 
 ├── toxicity_classifier.py # Main script (runs full demo) 
 ├── README.md # Project documentation 
 ├── requirements.txt # Dependencies
 └── data/ # Dataset folder 
   └── civil_comments_toxic_sample.csv # 250 samples labelled as toxic from the original civil comments dataset
-``` 
 </pre>
 
 ***
