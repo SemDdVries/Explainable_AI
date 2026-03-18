@@ -1,5 +1,5 @@
 # Explainable_AI 
-***
+
 ## Overview
 
 This project investigates how different explainable AI (XAI) methods explain predictions of a BERT-based toxicity classifier. The goal is to compare explanation methods and evaluate whether they highlight similar important words in text.
@@ -14,8 +14,6 @@ LIME (Local Interpretable Model-agnostic Explanations)
 
 Explanations are compared using Jaccard similarity on the top-5 most important tokens.
 
-***
-
 ## Research Goal
 
 The main research question is:
@@ -26,8 +24,6 @@ Additionally, the project evaluates:
   - Agreement between explanation methods
   - Alignment with human intuition
   - Behavior on identity-related text
-
-***
 
 ## Repository Structure:
 <pre> 
@@ -40,14 +36,10 @@ Explainable_AI/
   └── civil_comments_toxic_sample.csv # 250 samples labelled as toxic from the original civil comments dataset
 </pre>
 
-***
-
 ## Setup Instructions
 ### 1. Clone the repository
 git clone https://github.com/SemDdVries/Explainable_AI.git
 cd Explainable_AI
-
-***
 
 ### 2. Create a Virtual Environment using Python version 3.12.x
 Version 3.12 is required as most installments will not work on python versions 3.13 and up. 
@@ -67,8 +59,6 @@ To create the environment, use the steps below:
 ### 3. Download requirements
 run "pip install pandas numpy matplotlib torch transformers captum lime" to install all neccessary libraries
 
-***
-
 ## Dataset
 This project uses a sample of the Jigsaw Civil Comments dataset:
 
@@ -76,8 +66,6 @@ For more information about this dataset and to find a download link:
 https://www.kaggle.com/competitions/jigsaw-unintended-bias-in-toxicity-classification/data
 
 A sample containing 250 rows with a toxicity score of 0.5 or higher is given in the data folder, so no download is neccessary. 
-
-***
 
 ## What The Code Does
 ### 1. Model
@@ -126,15 +114,11 @@ And a terminal output with:
   - Top 5 tokens per method on a demo sentence
   - Jaccard scores (in the same way as listed above) for a demo sentence
 
-***
-
 ## Limitations
   - Small sample size is used (250 comments)
   - LIME uses reduced sampling (n=100 instead of n=5000)
   - Explanations may differ across methods
   - Only one demo sentence is shown, of which the results may differ per run
-
-***
 
 ## Author
 
